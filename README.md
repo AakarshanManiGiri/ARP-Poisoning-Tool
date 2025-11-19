@@ -2,6 +2,9 @@
   <img src="https://capsule-render.vercel.app/api?text=ARP%20Poisoning%20Tool&type=waving&color=gradient&height=120"/>
 </p>
 <p align="center">
+<a href="https://www.codefactor.io/repository/github/aakarshanmanigiri/arp-poisoning-tool/overview/main" align="center"><img src="https://www.codefactor.io/repository/github/aakarshanmanigiri/arp-poisoning-tool/badge/main" alt="CodeFactor"/></a>
+</p>
+<p align="center">
   <b>ARP Spoofing Tool</b><br>
   A python tool that performs ARP cache poisoning
 </p>
@@ -27,4 +30,5 @@ In this case:<br>
 
 
 <h2>Disclaimer</h2>
-This Project is designed exclusively for educational pursposes only.
+This Project is designed exclusively for educational purposes only.
+
