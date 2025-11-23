@@ -7,6 +7,8 @@ from PyQt6.QtWidgets import (
 )
 from PyQt6.QtCore import Qt, QThread, pyqtSignal
 from scapy.all import ARP, sr1, send
+def is_admin():
+    return os.geteuid() == 0
 
 
 def get_mac(ip):
@@ -114,6 +116,9 @@ class MainWindow(QMainWindow):
     def run_function_1(self):
         val1 = self.input1.text().strip()
         val2 = self.input2.text().strip()
+        if not is_admin():
+            self.print_output("Tool needs to run as root/admin.")
+            return
         if not val1 or not val2:
             self.print_output("Please enter both Victim IP and Gateway IP before starting.")
             return
